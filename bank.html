@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bap Er Bank</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>bangladesh bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-4">Well come to your <span class="font-bold text-violet-500">baber bank</span> !!!</h1>
+        <h3 class="mt-4 text-5xl text-center font-semibold">your bank <span class="text-blue-500">account</span></h3>
     </header>
     <main>
-        <section class="bg-blue-200 w-9/12 mx-auto mt-12 p-8">
-            <h3 class="text-3xl">Please Login</h3>
-            <div class="mt-4">
-                <input id="input-email" class="w-9/12 mb-2 px-3 block" type="email" placeholder="Enter your email" name="email" id="" required>
-                <input id="input-pass" class="w-9/12 px-2 block" type="password" placeholder="Enter your password" name="password" id=""required>
-                <button id="btn-submit" class="bg-amber-400 hover:bg-sky-700 py-2 px-8 text-white font-medium mt-2 rounded border-none">Submit</button>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-600 p-8 text-center rounded-2xl">
+                    <h4 class="text-3xl text-white font-semibold">Deposit </h4>
+                    <h2  class="text-3xl text-white font-semibold">$  <span id="input-amout" class="text-blue-500">00</span></h2>
+                </div>
+                <div class="bg-cyan-600 p-8 text-center rounded-2xl">
+                    <h4 class="text-3xl text-white font-semibold">Withdraw </h4>
+                    <h2 class="text-3xl text-white font-semibold">$ <span class="text-blue-500">00</span></h2>
+                </div>
+                <div class="bg-pink-600 p-8 text-center rounded-2xl">
+                    <h4 class="text-3xl text-white font-semibold">Balance </h4>
+                    <h2 class="text-3xl text-white font-semibold">$ <span class="text-blue-500">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposit withdraw -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-blue-400 p-8 rounded-2xl">
+                    <h4 class="text-3xl text-white font-semibold mb-3">Please Deposit </h4>
+                        <input id="input-deposit" class="w-9/12 mb-2 px-3 block" type="number" placeholder="$ Amount you want to deposit" name="email" id="" required>
+                        <button id="btn-submit" class="bg-amber-400 hover:bg-sky-700 py-2 px-8 text-white font-medium mt-2 rounded border-none">Deposit</button>
+                </div>
+                <div class="bg-blue-400 p-8  rounded-2xl">
+                    <h4 class="text-3xl text-white font-semibold mb-3">Please Withdraw </h4>
+                        <input id="input-withdraw" class="w-9/12 mb-2 px-3 block" type="number" placeholder="$ Amount you want to deposit" name="email" id="" required>
+                        <button id="btn-submit" class="bg-amber-400 hover:bg-sky-700 py-2 px-8 text-white font-medium mt-2 rounded border-none">Withdraw</button>
+                  
+                </div>
             </div>
         </section>
     </main>
-    <script src="./js/login.js"></script>
+    <script src="bank.js"></script>
 </body>
+
 </html>
